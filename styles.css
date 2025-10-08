@@ -1,0 +1,96 @@
+/* Google Font will be loaded in the HTML. Base styles and layout separated from HTML. */
+:root{
+  --brand:#e67e22;
+  --dark:#222;
+  --muted:#666;
+  --bg:#f9f9f9;
+  --container:1200px;
+}
+*{box-sizing:border-box}
+html,body{height:100%}
+body{
+  font-family: 'Inter', system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial;
+  line-height:1.5;
+  color:#222;
+  background:var(--bg);
+  -webkit-font-smoothing:antialiased;
+  -moz-osx-font-smoothing:grayscale;
+}
+a{color:inherit;text-decoration:none}
+/* Ensure links do not show underlines by default but remain identifiable via color and focus */
+a:hover,a:focus{text-decoration:none}
+img{max-width:100%;display:block}
+
+/* Skip link */
+.skip-link{position:absolute;left:-9999px;top:auto;width:1px;height:1px;overflow:hidden}
+.skip-link:focus{position:static;left:auto;width:auto;height:auto;padding:.5rem 1rem;background:#000;color:#fff;border-radius:4px}
+
+/* Header */
+header{background:var(--dark);color:#fff;position:sticky;top:0;z-index:60}
+.container{max-width:var(--container);margin:0 auto;padding:0 1rem}
+.nav-wrap{display:flex;align-items:center;justify-content:space-between;padding:1rem 0}
+.logo{font-weight:700;font-size:1.25rem}
+nav ul{display:flex;gap:.5rem;align-items:center;list-style:none}
+nav a{display:inline-block;padding:.45rem .75rem;border-radius:6px;color:#fff}
+nav a:hover,nav a:focus{background:rgba(255,255,255,0.06);outline:none}
+.cta{background:var(--brand);color:#fff;padding:.5rem .9rem;border-radius:6px}
+
+/* Mobile nav */
+.nav-toggle{display:none;background:transparent;border:0;color:#fff;font-size:1.2rem}
+.mobile-nav{display:none}
+
+/* Hero */
+.hero{position:relative;color:#fff;display:flex;align-items:center;justify-content:center;text-align:center;min-height:56vh;background-size:cover;background-position:center}
+.hero::before{content:"";position:absolute;inset:0;background:linear-gradient(180deg,rgba(0,0,0,.45),rgba(0,0,0,.4))}
+.hero-content{position:relative;z-index:2;padding:2rem;max-width:900px}
+.hero h1{font-size:clamp(1.6rem,3.5vw,2.5rem);margin-bottom:.75rem}
+.hero p{font-size:clamp(1rem,2.2vw,1.1rem);margin-bottom:1rem;color:var(--bg)}
+
+/* Sections */
+section{padding:3rem 0}
+.section-title{text-align:center;font-size:1.6rem;margin-bottom:1rem;color:var(--dark)}
+
+.features{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:1rem}
+.feature-box{background:#fff;padding:1.25rem;border-radius:10px;box-shadow:0 6px 18px rgba(25,25,25,0.06);text-align:center}
+.icon{font-size:1.6rem;color:var(--brand);margin-bottom:.5rem}
+
+.products-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:1rem}
+.product-card{background:#fff;border-radius:10px;overflow:hidden;box-shadow:0 6px 18px rgba(25,25,25,0.06);display:flex;flex-direction:column}
+.product-card img{height:180px;object-fit:cover;width:100%;display:block}
+.product-info{padding:1rem;display:flex;flex-direction:column;gap:.5rem}
+.price{color:var(--brand);font-weight:700}
+
+.gallery-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(140px,1fr));gap:.5rem}
+.gallery-grid img{width:100%;height:120px;object-fit:cover;border-radius:8px}
+
+.testimonial{background:#fff;padding:1.25rem;border-radius:10px;box-shadow:0 6px 18px rgba(25,25,25,0.06)}
+
+.contact-form{max-width:640px;margin:0 auto;background:#fff;padding:1.25rem;border-radius:10px;box-shadow:0 6px 18px rgba(25,25,25,0.06)}
+.contact-form label{display:block;margin-bottom:.25rem;font-weight:600}
+.contact-form input,.contact-form textarea{width:100%;padding:.6rem;border:1px solid #ddd;border-radius:6px;margin-bottom:.75rem}
+.contact-form button{display:inline-block;padding:.6rem 1rem;background:var(--brand);color:#fff;border:none;border-radius:6px;cursor:pointer}
+
+/* Reusable primary link-button for anchors that need to look like buttons */
+.btn-primary{display:inline-block;padding:.55rem .9rem;background:var(--brand);color:#fff;border-radius:6px;text-decoration:none}
+.btn-primary:hover,.btn-primary:focus{background:#cf6a16}
+.form-message{display:none;padding:.75rem;border-radius:6px;margin-top:.5rem}
+.form-message.success{display:block;background:#e9f6ef;color:#064e3b}
+.form-message.error{display:block;background:#fff1f2;color:#7f1d1d}
+
+footer{background:var(--dark);color:#cfcfcf;padding:1.25rem;text-align:center}
+footer a{color:var(--brand)}
+
+/* Focus styles for accessibility */
+a:focus,button:focus,input:focus,textarea:focus{outline:3px solid rgba(230,126,34,.18);outline-offset:2px}
+
+/* Responsive */
+@media (max-width:800px){
+  nav ul{display:none}
+  /* Hide desktop nav list specifically on small screens */
+  .desktop-nav{display:none}
+  .nav-toggle{display:inline-block}
+  /* mobile nav is hidden by default; .open makes it visible */
+  .mobile-nav{display:none;background:var(--dark);position:absolute;left:0;right:0;top:100%;padding:1rem;border-top:1px solid rgba(255,255,255,0.04)}
+  .mobile-nav.open{display:block}
+  .mobile-nav a{display:block;padding:.5rem 0;color:#fff}
+}
