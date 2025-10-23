@@ -1,0 +1,11 @@
+{
+  "name": "kalahari-4x4",
+  "version": "0.1.0",
+  "scripts": {
+    "preview": "npx http-server -c-1 -p 8080"
+  },
+  "devDependencies": {
+    "sharp": "^0.32.0",
+    "http-server": "^14.1.1"
+  }
+}

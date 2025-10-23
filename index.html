@@ -3,155 +3,489 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Kalahari 4×4 Accessories | Kampala, Uganda</title>
-  <meta name="description" content="Kalahari 4x4 Accessories in Kampala — roll bars, canopies, roof racks, bumpers, and installation. Nationwide delivery across Uganda." />
-  <!-- Open Graph / Social -->
-  <meta property="og:title" content="Kalahari 4×4 Accessories | Kampala" />
-  <meta property="og:description" content="Quality 4×4 accessories with local stock and installation in Kampala. Nationwide delivery." />
-  <meta property="og:type" content="website" />
-  <meta property="og:image" content="placeholder-hero.jpg" />
-  <meta name="twitter:card" content="summary_large_image" />
-  
-  <!-- Google Fonts preload -->
+  <title>Kalahari Drive 4×4 Accessories | Kampala, Uganda</title>
+  <meta name="description" content="Kalahari 4x4 Accessories in Kampala — roll bars, canopies, roof racks, bumpers, and installation. Serving Kiseka Market and nationwide." />
+    <!-- LocalBusiness schema -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Store",
+      "name": "Kalahari 4x4 Accessories",
+      "image": "canopy.jpg",
+      "@id": "https://example.com/kalahari",
+      "url": "",
+      "telephone": "+256752558000",
+      "email": "kalaharidrive4x4@gmail.com",
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "Kiseka Market",
+        "addressLocality": "Kampala",
+        "addressCountry": "UG"
+      },
+      "openingHours": "Mo-Sa 08:00-18:00"
+    }
+    </script>
+
+  <!-- Google Fonts -->
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="styles.css">
+  <link rel="manifest" href="manifest.json">
+  <meta name="theme-color" content="#e67e22">
 </head>
 <body>
 
   <a class="skip-link" href="#main">Skip to content</a>
+
+    <!-- modal root for accessibility -->
+    <div id="modalRoot" aria-hidden="true"></div>
+
   <!-- Header / Navbar -->
   <header role="banner">
     <div class="container nav-wrap">
-      <div class="logo">Kalahari 4×4</div>
+  <a class="logo" href="/" aria-label="Kalahari 4 by 4 Accessories">Kalahari Drive 4×4</a>
       <nav aria-label="Primary navigation">
         <button id="navToggle" class="nav-toggle" aria-expanded="false" aria-controls="mobileNav">☰ Menu</button>
         <ul class="desktop-nav">
           <li><a href="#home">Home</a></li>
           <li><a href="#products">Products</a></li>
           <li><a href="#gallery">Gallery</a></li>
-          <li><a href="#contact">Contact</a></li>
+          <li><a href="#contact">Contact Us</a></li>
         </ul>
         <div id="mobileNav" class="mobile-nav" aria-hidden="true">
           <a href="#home">Home</a>
           <a href="#products">Products</a>
           <a href="#gallery">Gallery</a>
-          <a href="#contact">Contact</a>
+          <a href="#contact">Contact Us</a>
         </div>
       </nav>
       <a href="tel:+256752558000" class="cta">Call / WhatsApp</a>
     </div>
   </header>
 
-  <!-- Hero / Hero Banner -->
-  <section id="home" class="hero" style="background-image: url('canopy.jpg');">
+  <!-- Hero Section -->
+  <section id="home" class="hero" style="background-image:url('canopy2.jpg');">
     <div class="hero-content">
-      <h1>Upgrade Your Ride with Quality 4×4 Accessories</h1>
-      <p>From roll bars to canopies, we have what your vehicle needs. Based in Kampala, serving clients nationwide.</p>
-      <a href="#products" class="btn-primary">Shop Now</a>
+      <h1>Upgrade Your 4×4 with Premium Accessories</h1>
+      <p class="hero-sub">Roll bars, canopies, roof racks, bumpers, and professional installation. Serving Kampala & nationwide.</p>
+      <div class="hero-ctas">
+        <a href="#products" class="btn-primary hero-cta">Shop Now</a>
+        <a href="#contact" class="btn-secondary">Get a Quote</a>
+      </div>
+      <p class="hero-micro">Call / WhatsApp <a href="tel:+256752558000" class="hero-phone">+256 752 558000</a> — free installation quote on select items.</p>
     </div>
   </section>
+
+    <main id="main">
 
   <!-- Features / Why Choose Us -->
   <section id="about">
     <div class="container">
-      <h2 class="section-title">Why Kalahari 4×4 Accessories?</h2>
+      <h2 class="section-title">Why Choose Kalahari 4×4 Accessories?</h2>
       <div class="features">
         <div class="feature-box">
           <div class="icon">🔧</div>
           <h3>Wide Product Range</h3>
-          <p>Roll bars, canopies, roof racks, side steps, lights & more.</p>
+          <p>Roll bars, canopies, roof racks, side steps, bumpers, lights & more.</p>
         </div>
         <div class="feature-box">
           <div class="icon">🏭</div>
           <h3>Local Stock & Installation</h3>
-          <p>We hold stock locally in Kampala and do installations.</p>
+          <p>Available in Kampala with professional installation service.</p>
         </div>
         <div class="feature-box">
           <div class="icon">🚚</div>
           <h3>Nationwide Delivery</h3>
-          <p>We deliver across Uganda reliably & quickly.</p>
+          <p>Reliable delivery across Uganda to your location.</p>
         </div>
         <div class="feature-box">
           <div class="icon">💡</div>
           <h3>Quality Assurance</h3>
-          <p>Durable materials, trusted brands, warranty options.</p>
+          <p>Durable accessories from trusted brands with warranty options.</p>
         </div>
       </div>
     </div>
   </section>
 
-  <!-- Products / Sample offerings -->
+  <!-- (main remains open until after contact) -->
+
+  <!-- Products Section -->
   <section id="products">
     <div class="container">
-      <h2 class="section-title">Featured Products</h2>
-      <div class="products-grid">
-        <div class="product-card">
-          <img src="roll bars.jpg" alt="Sport-style roll bar installed" loading="lazy">
+      <h2 class="section-title">Our Products</h2>
+      <!-- Filter bar -->
+      <div class="filter-bar" aria-label="Product filters">
+        <label for="categoryFilter">Category:</label>
+        <select id="categoryFilter">
+          <option value="all">All</option>
+          <option value="rollbar">Roll Bars</option>
+          <option value="tonneau">Tonneau</option>
+          <option value="roof">Roof Racks</option>
+          <option value="bumper">Bumpers</option>
+          <option value="canopy">Canopies</option>
+          <option value="accessory">Accessories</option>
+          <option value="roofbar">Roof Bars</option>
+          <option value="sidestep">Side Steps</option>
+          <option value="nudge">Nudge Guards</option>
+          <option value="softleather">Soft Leather Covers</option>
+        </select>
+  <input id="searchProducts" type="search" placeholder="Search products" aria-label="Search products">
+
+  <button id="resetFilters" class="btn-primary" type="button">Reset</button>
+        <div id="filterStatus" class="filter-status" aria-live="polite">Showing <span id="filterCount">6</span> categories</div>
+      </div>
+
+  <div class="products-grid" id="productsGrid">
+        <!-- Category cards: show 1 representative image and a starting price -->
+        <div class="category-card">
+          <img src="rollbar3.jpg" alt="Roll bars category" loading="lazy" width="1200" height="675">
           <div class="product-info">
-            <h4>Roll Bar (Sport Style)</h4>
-            <div class="price">USh 1,000,000</div>
-            <a href="#" class="btn-primary">Enquire Now</a>
+            <h4>Roll Bars</h4>
+            <div class="price">Starting USh 1,000,000</div>
+            <button class="btn-primary open-category" data-category="rollbar">View stock</button>
           </div>
         </div>
-        <div class="product-card">
-          <img src="Leather Tonneau Cover Hilux.jpg" alt="Hard plastic tonneau cover on pickup" loading="lazy">
+
+        <div class="category-card" data-category="tonneau">
+          <img src="slidingcover.jpg" alt="Tonneau covers" loading="lazy" width="1200" height="675">
           <div class="product-info">
-            <h4>Hard Plastic Tonneau Cover</h4>
-            <div class="price">USh 1,800,000</div>
-            <a href="#" class="btn-primary">Enquire Now</a>
+            <h4>Hard & Sliding Covers</h4>
+            <div class="price">Starting USh 2,000,000</div>
+            <button class="btn-primary open-category" data-category="tonneau">View stock</button>
           </div>
         </div>
-        <div class="product-card">
-          <img src="roof rack.jpg" alt="Roof rack and crossbars" loading="lazy">
+
+        <div class="category-card" data-category="softleather">
+          <img src="softtop1.jpg" alt="Soft Leather Covers" loading="lazy" width="1200" height="675">
           <div class="product-info">
-            <h4>Roof Rack / Roof Bars</h4>
-            <div class="price">USh 300,000</div>
-            <a href="#" class="btn-primary">Enquire Now</a>
+            <h4>Soft Leather Covers</h4>
+            <div class="price">Starting USh 800,000</div>
+            <button class="btn-primary open-category" data-category="softleather">View stock</button>
           </div>
         </div>
-        <div class="product-card">
-          <img src="front bull bar.jpg" alt="Front bumper guard installed" loading="lazy">
+
+        <div class="category-card" data-category="roof">
+          <img src="roofrack1.jpg" alt="Roof racks" loading="lazy" width="1200" height="675">
           <div class="product-info">
-            <h4>Front Bumper Guard</h4>
-            <div class="price">USh 3,500,000</div>
-            <a href="#" class="btn-primary">Enquire Now</a>
+            <h4>Roof Racks</h4>
+            <div class="price">Starting USh 400,000</div>
+            <button class="btn-primary open-category" data-category="roof">View stock</button>
           </div>
+        </div>
+
+        <div class="category-card" data-category="bumper">
+          <img src="front1.jpg" alt="Bumpers & guards" loading="lazy" width="1200" height="675">
+          <div class="product-info">
+            <h4>Bumpers & Guards</h4>
+            <div class="price">Starting USh 2,000,000</div>
+            <button class="btn-primary open-category" data-category="bumper">View stock</button>
+          </div>
+        </div>
+
+        <div class="category-card" data-category="canopy">
+          <img src="canopy1.jpg" alt="Canopies" loading="lazy" width="1200" height="675">
+          <div class="product-info">
+            <h4>Canopies</h4>
+            <div class="price">Starting USh 2,000,000</div>
+            <button class="btn-primary open-category" data-category="canopy">View stock</button>
+          </div>
+        </div>
+
+        <div class="category-card" data-category="accessory">
+          <img src="accessories1.jpg" alt="Accessories" loading="lazy" width="1200" height="675">
+          <div class="product-info">
+            <h4>Accessories</h4>
+            <div class="price">Starting USh 300,000</div>
+            <button class="btn-primary open-category" data-category="accessory">View stock</button>
+          </div>
+        </div>
+
+        <div class="category-card" data-category="roofbar">
+          <img src="roofbar.jpg" alt="Roof bars" loading="lazy" width="1200" height="675">
+          <div class="product-info">
+            <h4>Roof Bars</h4>
+            <div class="price">Starting USh 400,000</div>
+            <button class="btn-primary open-category" data-category="roofbar">View stock</button>
+          </div>
+        </div>
+
+        <div class="category-card" data-category="sidestep">
+          <img src="sides.jpg" alt="Side Steps" loading="lazy" width="1200" height="675">
+          <div class="product-info">
+            <h4>Side Steps</h4>
+            <div class="price">Starting USh 250,000</div>
+            <button class="btn-primary open-category" data-category="sidestep">View stock</button>
+          </div>
+        </div>
+
+        <div class="category-card" data-category="nudge">
+          <img src="nudge1.jpg" alt="Nudge Guards" loading="lazy" width="1200" height="675">
+          <div class="product-info">
+            <h4>Nudge Guards</h4>
+            <div class="price">Starting USh 750,000</div>
+            <button class="btn-primary open-category" data-category="nudge">View stock</button>
+          </div>
+        </div>
+
+      </div>
+
+      <!-- Category modal (populated by JS) -->
+      <div id="categoryModal" class="modal-overlay" aria-hidden="true" role="dialog" aria-modal="true">
+        <div class="modal" role="document">
+          <div class="category-modal-header">
+            <h3 id="categoryModalTitle">Category</h3>
+            <button class="modal-close" aria-label="Close category gallery">✕</button>
+          </div>
+          <div class="category-modal-body">
+            <aside class="left">
+              <div id="categoryModalPrices" class="category-prices" aria-live="polite"></div>
+            </aside>
+            <div class="right">
+              <div id="categoryModalGallery" class="category-gallery" tabindex="0"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Per-category templates (authoritative HTML for each category) -->
+      <template id="tmpl-rollbar">
+        <div class="tmpl-category" data-key="rollbar">
+          <div class="category-price-list">
+            <div class="category-price">Roll Bars — Starting USh 1,000,000</div>
+            <div class="category-price">Installation available</div>
+            <button class="btn-primary tmpl-enquire" data-cat="rollbar" type="button">Enquire</button>
+          </div>
+          <div class="category-images">
+            <figure class="cat-item"><img src="rollbar3.jpg" alt="Roll bar example 1" loading="lazy"><figcaption>Stainless Rollbar (USh 400k)</figcaption></figure>
+            <figure class="cat-item"><img src="rollbar1.jpg" alt="Roll bar example 2" loading="lazy"><figcaption>Heavy Duty (USh 650k)</figcaption></figure>
+            <figure class="cat-item"><img src="rollbar2.jpg" alt="Roll bar example 3" loading="lazy"><figcaption>Sport Rollbar</figcaption></figure>
+            <figure class="cat-item"><img src="rollbar5.jpg" alt="Roll bar example 4" loading="lazy"><figcaption>Utility Rollbar</figcaption></figure>
+          </div>
+        </div>
+      </template>
+
+      <template id="tmpl-tonneau">
+        <div class="tmpl-category" data-key="tonneau">
+          <div class="category-price-list">
+            <div class="category-price">Tonneau Covers — Starting USh 2,000,000</div>
+            <button class="btn-primary tmpl-enquire" data-cat="tonneau" type="button">Enquire</button>
+          </div>
+          <div class="category-images">
+            <figure class="cat-item"><img src="slidingcover.jpg" alt="Tonneau sliding cover" loading="lazy"><figcaption>Sliding Tonneau</figcaption></figure>
+            <figure class="cat-item"><img src="hardtri2.jpg" alt="Hard top tonneau" loading="lazy"><figcaption>Hard Top Cover</figcaption></figure>
+            <figure class="cat-item"><img src="hardtri1.jpg" alt="Tonneau installation" loading="lazy"><figcaption>Installed Hard Cover</figcaption></figure>
+          </div>
+        </div>
+      </template>
+
+      <template id="tmpl-softleather">
+        <div class="tmpl-category" data-key="softleather">
+          <div class="category-price-list">
+            <div class="category-price">Soft Leather Covers — Starting USh 800,000</div>
+            <button class="btn-primary tmpl-enquire" data-cat="softleather" type="button">Enquire</button>
+          </div>
+          <div class="category-images">
+            <figure class="cat-item"><img src="softcover2.jpg" alt="Soft leather cover" loading="lazy"><figcaption>Premium Leather</figcaption></figure>
+            <figure class="cat-item"><img src="softtop1.jpg" alt="Soft leather interior" loading="lazy"><figcaption>Interior Finish</figcaption></figure>
+          </div>
+        </div>
+      </template>
+
+      <template id="tmpl-roof">
+        <div class="tmpl-category" data-key="roof">
+          <div class="category-price-list">
+            <div class="category-price">Roof Racks — Starting USh 400,000</div>
+            <button class="btn-primary tmpl-enquire" data-cat="roof" type="button">Enquire</button>
+          </div>
+          <div class="category-images">
+            <figure class="cat-item"><img src="roofrack1.jpg" alt="Roof rack" loading="lazy"><figcaption>Roof Rack Basic</figcaption></figure>
+          </div>
+        </div>
+      </template>
+
+      <template id="tmpl-bumper">
+        <div class="tmpl-category" data-key="bumper">
+          <div class="category-price-list">
+            <div class="category-price">Bumpers & Guards — Starting USh 2,000,000</div>
+            <button class="btn-primary tmpl-enquire" data-cat="bumper" type="button">Enquire</button>
+          </div>
+          <div class="category-images">
+            <figure class="cat-item"><img src="front1.jpg" alt="Front bumper" loading="lazy"><figcaption>Front Bumper</figcaption></figure>
+            <figure class="cat-item"><img src="front2.jpg" alt="Front bumper 2" loading="lazy"><figcaption>Bumper Pro</figcaption></figure>
+            <figure class="cat-item"><img src="front3.jpg" alt="Front bumper 3" loading="lazy"><figcaption>Heavy Guard</figcaption></figure>
+            <figure class="cat-item"><img src="rear1.jpg" alt="Rear bumper" loading="lazy"><figcaption>Rear Bumper</figcaption></figure>
+          </div>
+        </div>
+      </template>
+
+      <template id="tmpl-canopy">
+        <div class="tmpl-category" data-key="canopy">
+          <div class="category-price-list">
+            <div class="category-price">Canopies — Starting USh 2,000,000</div>
+            <button class="btn-primary tmpl-enquire" data-cat="canopy" type="button">Enquire</button>
+          </div>
+          <div class="category-images">
+            <figure class="cat-item"><img src="canopy1.jpg" alt="Canopy example" loading="lazy"><figcaption>Durable Canopy</figcaption></figure>
+            <figure class="cat-item"><img src="canopy2.jpg" alt="Canopy example 2" loading="lazy"><figcaption>Installed Canopy</figcaption></figure>
+            <figure class="cat-item"><img src="canopy3.jpg" alt="Canopy example 3" loading="lazy"><figcaption>Canopy Interior</figcaption></figure>
+          </div>
+        </div>
+      </template>
+
+      <template id="tmpl-accessory">
+        <div class="tmpl-category" data-key="accessory">
+          <div class="category-price-list">
+            <div class="category-price">Accessories — Starting USh 300,000</div>
+            <button class="btn-primary tmpl-enquire" data-cat="accessory" type="button">Enquire</button>
+          </div>
+          <div class="category-images">
+            <figure class="cat-item"><img src="accessories1.jpg" alt="Accessories" loading="lazy"><figcaption>Assorted Accessories</figcaption></figure>
+          </div>
+        </div>
+      </template>
+
+      <template id="tmpl-roofbar">
+        <div class="tmpl-category" data-key="roofbar">
+          <div class="category-price-list">
+            <div class="category-price">Roof Bars — Starting USh 400,000</div>
+            <button class="btn-primary tmpl-enquire" data-cat="roofbar" type="button">Enquire</button>
+          </div>
+          <div class="category-images">
+            <figure class="cat-item"><img src="roofbar.jpg" alt="Roof bar" loading="lazy"><figcaption>Roof Bar</figcaption></figure>
+          </div>
+        </div>
+      </template>
+
+      <template id="tmpl-sidestep">
+        <div class="tmpl-category" data-key="sidestep">
+          <div class="category-price-list">
+            <div class="category-price">Side Steps — Starting USh 250,000</div>
+            <button class="btn-primary tmpl-enquire" data-cat="sidestep" type="button">Enquire</button>
+          </div>
+          <div class="category-images">
+            <figure class="cat-item"><img src="sides.jpg" alt="Side step" loading="lazy"><figcaption>Side Step</figcaption></figure>
+          </div>
+        </div>
+      </template>
+
+      <template id="tmpl-nudge">
+        <div class="tmpl-category" data-key="nudge">
+          <div class="category-price-list">
+            <div class="category-price">Nudge Guards — Starting USh 750,000</div>
+            <button class="btn-primary tmpl-enquire" data-cat="nudge" type="button">Enquire</button>
+          </div>
+          <div class="category-images">
+            <figure class="cat-item"><img src="nudge1.jpg" alt="Nudge guard" loading="lazy"><figcaption>Nudge Guard</figcaption></figure>
+            <figure class="cat-item"><img src="nudge2.jpg" alt="Nudge guard 2" loading="lazy"><figcaption>Heavy Nudge</figcaption></figure>
+          </div>
+        </div>
+      </template>
+    </div>
+  </section>
+
+  <!-- Our Brands Section -->
+  <section id="brands">
+    <div class="container">
+      <h2 class="section-title">Our Brands</h2>
+      <p style="text-align:center;margin-bottom:1rem;color:var(--muted)">We stock accessories and parts from trusted local and international brands.</p>
+      <div class="brands-grid" aria-label="Brands we stock">
+        <div class="brand-single" aria-hidden="false">
+          <img src="brands.jpg" alt="Top brands we stock" loading="lazy" class="brands-full">
         </div>
       </div>
     </div>
   </section>
 
-  <!-- Gallery -->
+  <!-- Gallery Section -->
   <section id="gallery">
     <div class="container">
       <h2 class="section-title">Gallery & Installations</h2>
       <div class="gallery-grid">
-  <img src="hilux cover.jpg" alt="Installed canopy on Hilux" loading="lazy">
-  <img src="roof rack.jpg" alt="Roof rack installation" loading="lazy">
-  <img src="manual shutter.jpg" alt="Workshop installing roll bar" loading="lazy">
-  <img src="rear bull bar.jpg" alt="Completed vehicle with accessories" loading="lazy">
+        <img src="gallery1.jpg" alt="Gallery image 1" loading="lazy" width="800" height="450">
+        <img src="gallery2.jpg" alt="Gallery image 2" loading="lazy" width="800" height="450">
+        <img src="gallery3.jpg" alt="Gallery image 3" loading="lazy" width="800" height="450">
+        <img src="gallery4.jpg" alt="Gallery image 4" loading="lazy" width="800" height="450">
+        <img src="gallery5.jpg" alt="Gallery image 5" loading="lazy" width="800" height="450">
+        <img src="gallery6.jpg" alt="Gallery image 6" loading="lazy" width="800" height="450">
+        <img src="gallery7.jpg" alt="Gallery image 7" loading="lazy" width="800" height="450">
+        <img src="gallery8.jpg" alt="Gallery image 8" loading="lazy" width="800" height="450">
+        <img src="gallery9.jpg" alt="Gallery image 9" loading="lazy" width="800" height="450">
+        <img src="gallery10.jpg" alt="Gallery image 10" loading="lazy" width="800" height="450">
+        <img src="gallery11.jpg" alt="Gallery image 11" loading="lazy" width="800" height="450">
+        <img src="gallery12.jpg" alt="Gallery image 12" loading="lazy" width="800" height="450">
+        <img src="gallery3.jpg" alt="Gallery image 3" loading="lazy" width="800" height="450">
+        <img src="gallery4.jpg" alt="Gallery image 4" loading="lazy" width="800" height="450">
       </div>
     </div>
   </section>
 
-  <!-- Testimonials -->
+  <!-- Testimonials Section -->
   <section id="testimonials">
     <div class="container">
       <h2 class="section-title">What Our Clients Say</h2>
-      <div class="testimonial">
-        <p>“Kalahari supplied & installed my roll bar quickly. Quality is excellent and the team was professional.”</p>
-        <p><strong>— Joram, Kampala</strong></p>
+      <div class="testimonials-carousel" aria-roledescription="carousel">
+        <button class="carousel-prev" aria-label="Previous testimonial">◀</button>
+        <div class="carousel-track" id="testimonialTrack">
+          <article class="testimonial-slide" data-index="0" aria-hidden="false">
+            <p>“Kalahari supplied & installed my roll bar quickly. Quality is excellent and the team was professional.”</p>
+            <p><strong>— Joram, Kampala</strong></p>
+          </article>
+          <article class="testimonial-slide" data-index="1" aria-hidden="true">
+            <p>“Great service and fair pricing. They installed a canopy on my Hilux in one day.”</p>
+            <p><strong>— Aisha, Jinja</strong></p>
+          </article>
+          <article class="testimonial-slide" data-index="2" aria-hidden="true">
+            <p>“Very helpful staff. The roof rack fits perfectly and delivery was on time.”</p>
+            <p><strong>— Michael, Kampala</strong></p>
+          </article>
+          <article class="testimonial-slide" data-index="3" aria-hidden="true">
+            <p>“Installation was neat and fast. Highly recommend Kalahari for aftermarket parts.”</p>
+            <p><strong>— Sarah, Entebbe</strong></p>
+          </article>
+        </div>
+        <button class="carousel-next" aria-label="Next testimonial">▶</button>
+        <div class="carousel-indicators" id="testimonialIndicators" role="tablist" aria-label="Testimonial indicators">
+          <button data-slide-to="0" aria-label="Go to testimonial 1" aria-selected="true"></button>
+          <button data-slide-to="1" aria-label="Go to testimonial 2" aria-selected="false"></button>
+          <button data-slide-to="2" aria-label="Go to testimonial 3" aria-selected="false"></button>
+          <button data-slide-to="3" aria-label="Go to testimonial 4" aria-selected="false"></button>
+        </div>
+      </div>
+      
+    </div>
+  </section>
+
+  <!-- FAQ Section -->
+  <section id="faq">
+    <div class="container">
+      <h2 class="section-title">Frequently Asked Questions</h2>
+      <div class="faq-list">
+        <div class="faq-item">
+          <button class="faq-q" aria-expanded="false">Do you provide installation?</button>
+          <div class="faq-a" hidden>Yes — we offer professional installation for all accessories bought from us. Prices vary by product and vehicle model.</div>
+        </div>
+        <div class="faq-item">
+          <button class="faq-q" aria-expanded="false">Do you deliver outside Kampala?</button>
+          <div class="faq-a" hidden>Yes. We deliver nationwide. Shipping fees depend on distance and order size. Contact us for a quote.</div>
+        </div>
+        <div class="faq-item">
+          <button class="faq-q" aria-expanded="false">What warranties do you offer?</button>
+          <div class="faq-a" hidden>Warranties vary by product and brand. We try to stock parts with manufacturer warranties and provide local support.</div>
+        </div>
+        <div class="faq-item">
+          <button class="faq-q" aria-expanded="false">Can I request a custom order?</button>
+          <div class="faq-a" hidden>Yes. For custom fabrications or special requests, contact us with details and we'll provide a lead time and estimate.</div>
+        </div>
       </div>
     </div>
   </section>
 
-  <!-- Contact / Enquiry -->
+  <!-- Contact Section -->
   <section id="contact">
     <div class="container">
       <h2 class="section-title">Get in Touch</h2>
       <div class="contact-form">
-        <form id="contactForm" action="#" method="post">
+        <form id="contactForm" action="https://formspree.io/f/your-form-id" method="POST">
           <label for="name">Name</label>
           <input type="text" id="name" name="name" placeholder="Your Name" required>
 
@@ -161,13 +495,20 @@
           <label for="phone">Phone / WhatsApp</label>
           <input type="text" id="phone" name="phone" placeholder="Phone / WhatsApp" required>
 
+          <p class="contact-email">Or email us at <a href="mailto:kalaharidrive4x4@gmail.com">kalaharidrive4x4@gmail.com</a></p>
+
           <label for="message">Message</label>
           <textarea id="message" name="message" rows="5" placeholder="Your Message / Request"></textarea>
 
           <button type="submit">Send Message</button>
+          <!-- Honeypot field (hidden from users) -->
+          <input type="text" name="_hp" id="_hp" style="display:none">
           <div id="formMessage" class="form-message" role="status" aria-live="polite"></div>
         </form>
       </div>
+
+  <!-- Google Map Embed (Kiseka Market, Kampala) -->
+  <iframe src="https://www.google.com/maps?q=Kiseka+Market,+Kampala,+Uganda&output=embed" width="100%" height="250" style="border:0;margin-top:20px;" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
     </div>
   </section>
 
@@ -175,11 +516,30 @@
   <footer role="contentinfo">
     <p>&copy; 2025 Kalahari 4×4 Accessories. All rights reserved.</p>
     <p><a href="https://jiji.ug/shop/kalahari4x4acc" target="_blank" rel="noopener noreferrer">Visit our Jiji Shop</a></p>
+    <p class="designer">Designed by <a href="https://iguru256.github.io/tecnix/" target="_blank" rel="noopener noreferrer">Tecnix Uganda</a></p>
+    <div class="socials" aria-label="Follow us on social media">
+      <a class="social social-fb" href="https://www.facebook.com/" target="_blank" rel="noopener noreferrer" aria-label="Facebook">
+        <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M22 12.07C22 6.48 17.52 2 12 2S2 6.48 2 12.07c0 5.02 3.66 9.18 8.44 9.93v-7.03H7.9v-2.9h2.54V9.41c0-2.5 1.49-3.88 3.77-3.88 1.09 0 2.23.2 2.23.2v2.45h-1.25c-1.23 0-1.61.77-1.61 1.56v1.86h2.74l-.44 2.9h-2.3V22C18.34 21.25 22 17.09 22 12.07z"/></svg>
+      </a>
+      <a class="social social-ig" href="https://www.instagram.com/kalahari4x4accessories?igsh=MXRsOGZzaGRydzFweQ==" target="_blank" rel="noopener noreferrer" aria-label="Instagram">
+        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true"><rect x="3" y="3" width="18" height="18" rx="5" ry="5"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/><path d="M17.5 6.5h.01"/></svg>
+      </a>
+      <a class="social social-x" href="https://x.com/" target="_blank" rel="noopener noreferrer" aria-label="X (Twitter)">
+        <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M23 3.2c-.8.4-1.6.6-2.4.8.9-.6 1.5-1.4 1.8-2.4-.8.5-1.7.9-2.7 1.1C18.9 2 17.8 1.5 16.5 1.5c-2.4 0-4.2 1.9-4.2 4.3 0 .3 0 .6.1.9-3.5-.2-6.6-1.9-8.7-4.5-.4.6-.6 1.4-.6 2.2 0 1.5.8 2.9 2 3.7-.7 0-1.4-.2-2-.6v.1c0 2.1 1.4 3.9 3.3 4.3-.4.1-.8.1-1.2.1-.3 0-.6 0-.9-.1.6 1.9 2.3 3.3 4.3 3.4-1.6 1.3-3.7 2.1-5.9 2.1H4c2.1 1.4 4.6 2.2 7.3 2.2 8.7 0 13.5-7.3 13.5-13.6v-.6c.9-.7 1.6-1.6 2.2-2.6-.8.4-1.6.6-2.5.7z"/></svg>
+      </a>
+      <a class="social social-tt" href="https://www.tiktok.com/@kalahari.4x4.accessories?_t=ZM-90mn4SbY6vI&_r=1" target="_blank" rel="noopener noreferrer" aria-label="TikTok">
+        <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2v10.5A4.5 4.5 0 1 1 9.5 8V16a6 6 0 1 0 6-6V2h-3z"/></svg>
+      </a>
+    </div>
   </footer>
+
+  <!-- Back to top -->
+  <button id="backToTop" class="back-to-top" aria-label="Back to top">↑</button>
+
+  <!-- Floating WhatsApp Button -->
+  <a href="https://wa.me/256752558000?text=Hello%20Kalahari%204x4!" class="whatsapp-float" target="_blank" aria-label="Chat on WhatsApp">💬</a>
 
   <script src="main.js" defer></script>
 
 </body>
 </html>
-
-
